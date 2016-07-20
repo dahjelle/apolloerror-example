@@ -5,7 +5,7 @@
   "main": "server.js",
   "scripts": {
     "build": "watchify components/index.jsx -o public/script.js -v -d",
-    "server": "cd public && static-server --index=index.html --port=$PORT",
+    "server": "cd public && static-server --index=index.html --port=8888",
     "start": "parallelshell 'npm run build' 'npm run server'"
   },
   "author": "",
